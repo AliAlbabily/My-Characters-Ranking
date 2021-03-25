@@ -1,0 +1,88 @@
+{
+    "users": [
+        {
+            "name": "Naofumi Iwatani",
+            "description": "A 20-year old Otaku who got isekaied to another world. Things didn't go as he expected them to be. Will he be able to survive on his own ?",
+            "imageUrl": "https://i.imgur.com/oYDzENP.gif",
+            "score": 9.8
+        },
+        {
+            "name": "Levi Ackerman",
+            "description": "Strongest soldier of mankind.",
+            "imageUrl": "https://64.media.tumblr.com/fe369de6794d6ee1ee782e16b077fd5e/tumblr_prrfwgjHDQ1vfdmp1o2_540.gifv",
+            "score": 9.5
+        },
+        {
+            "name": "Mikasa Ackerman",
+            "description": "Most beautiful woman on earth.",
+            "imageUrl": "https://64.media.tumblr.com/fb08728d28190d62021f6673d2bfadf2/cecf7e6032c0eafc-b9/s540x810/3ef6a7ead588cf3f1ffbb0dcc883654258cfebcd.gifv",
+            "score": 9.2
+        },
+        {
+            "name": "Raphtalia",
+            "description": "A demihuman and Naofumi's first companion.",
+            "imageUrl": "https://i.imgur.com/zAAOD81.gif",
+            "score": 8.8
+        },
+        {
+            "name": "Shiroe (LH)",
+            "description": "Shiroe is a Half-Alv Enchanter-Scribe and the main protagonist of the Log Horizon series. A veteran player of the MMORPG  aaa in the genre, it's almost impossible.",
+            "imageUrl": "https://steamuserimages-a.akamaihd.net/ugc/879755598716406434/9A4371648FD8926985FCF3E6AC52319181D67D09/",
+            "score": 8.5
+        },
+        {
+            "name": "Hashirama",
+            "description": "The strongest Shinobi of his time.",
+            "imageUrl": "https://i.pinimg.com/originals/25/80/24/25802445b3cc172505eb8e2132324332.gif",
+            "score": 8
+        },
+        {
+            "name": "Goju Satoru",
+            "description": "Most OP anime character.",
+            "imageUrl": "https://i.imgur.com/URLiWgy.gif?noredirect",
+            "score": 7.8
+        },
+        {
+            "name": "Madara Uchiha",
+            "description": "Afraid assure square so happen mr an before. His many same been well can high that.",
+            "imageUrl": "https://i.pinimg.com/originals/cb/d0/e5/cbd0e554dde9a83c081f0dff3219b7e0.gif",
+            "score": 7.3
+        },
+        {
+            "name": "Sasha Blouse",
+            "description": "Shiroe is a Half-Alv Enchanter-Scribe and the main protagonist of the Log Horizon series. A veteran player of the MMORPG  aaa in the genre, it's almost impossible.",
+            "imageUrl": "https://steamuserimages-a.akamaihd.net/ugc/84848348034184625/639B43E655C62E7BD636B4C144308CD07CC7AF00/",
+            "score": 7.1
+        },
+        {
+            "name": "Sasuke Uchiha",
+            "description": "Afraid assure square so happen mr an before. His many same been well can high that.",
+            "imageUrl": "https://steamuserimages-a.akamaihd.net/ugc/809928961045169611/FC7508A5A6E820DD113D441353AF2377832C521A/",
+            "score": 7.1
+        },
+        {
+            "name": "Nobara",
+            "description": "Nothing for now",
+            "imageUrl": "https://i.pinimg.com/originals/9e/18/8c/9e188c30a388a0073581d2cea5bb1378.gif",
+            "score": 7
+        },
+        {
+            "name": "Vegeta",
+            "description": "Prince of all Saiyans",
+            "imageUrl": "https://i.pinimg.com/originals/28/00/ce/2800ce1f139bcf5d5d26c0ce01a5af49.gif",
+            "score": 6.8
+        },
+        {
+            "name": " Akatsuki (LH)",
+            "description": "In the real world, she was a college student named Shizuka Hanekura.",
+            "imageUrl": "https://i.imgur.com/fOJJMtg.gif",
+            "score": 6.7
+        },
+        {
+            "name": "Saber",
+            "description": "A loyal servant from the past that was summoned to fight alongside Shiro Emiya in the holy grail.",
+            "imageUrl": "https://steamuserimages-a.akamaihd.net/ugc/861729637608222516/B4DBB3CB1982B696D8AFAF379FA238DFB6FF21B4/",
+            "score": 6.5
+        }
+    ]
+}

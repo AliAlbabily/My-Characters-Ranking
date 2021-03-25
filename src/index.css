@@ -1,0 +1,307 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway:wght@300&display=swap');
+
+/******************************************************************************/
+/* Setup - CSS */
+/******************************************************************************/
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: linear-gradient(to right top, #65dfc9, #6cdbeb); */
+  background-image: url('https://jooinn.com/images/abstract-background-305.jpg');
+  background-position: center; /* Center the image */
+  background-repeat:no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/******************************************************************************/
+/* Reusable classes */
+/******************************************************************************/
+
+.row {
+  width: 620px;
+  margin: 0 auto; /* Top & Bottom will be 0, and Right & Left will be auto */
+}
+
+/******************************************************************************/
+/* character-creation-container */
+/******************************************************************************/
+
+#character-creation-container {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+}
+
+.stylish-btn {
+  background-color: lightseagreen;
+  width: 35vh;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.stylish-btn:hover {
+  background-color: #42968e;
+  transition: 0.3s;
+}
+
+/******************************************************************************/
+/* main-div */
+/******************************************************************************/
+
+#main-div {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  min-height: 80vh;
+  padding: 10px;
+}
+
+/* set margin-bottom to 0 at the last element inside of #main-div */
+#main-div > div:last-child { 
+  margin-bottom: 0 !important;
+}
+
+/******************************************************************************/
+/* character-container */
+/******************************************************************************/
+
+.character-container {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.character-item-info {
+  display: flex;
+  width: 540px;
+  box-shadow: 6px 6px 10px rgba(122, 122, 122, 0.2);
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.character-item-info:hover {
+  background-color: #d0ffef;
+  transition: 0.3s;
+}
+
+.character-item-info-col1 {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-item-info-col1 p {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #42968e;
+  font-family: sans-serif;
+}
+
+.character-item-info-col2 {
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.character-item-info-col3 {
+  width: 360px;
+  padding: 10px;
+  height: 120px;
+  display: grid;
+}
+
+.character-name {
+  font-family: 'PT Sans', sans-serif;
+  font-size: larger;
+  color: #42968e;
+}
+
+.character-description {
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: smaller;
+}
+
+.character-image {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 0.04rem rgb(0, 0, 0));
+}
+
+.character-score {
+  color: #42968e;
+  font-family: 'PT Sans', sans-serif;
+}
+
+#character-item-utilities {
+  text-decoration: none;
+  color: #42968e;
+  font-size: x-large;
+  background-color: whitesmoke;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(134, 134, 134, 0.2);
+}
+
+#character-item-utilities i:hover {
+  cursor: pointer;
+  color: darkgreen;
+}
+
+/******************************************************************************/
+/* left & right sidenavs */
+/******************************************************************************/
+
+.left-sidenav {
+  left: 0;
+}
+
+.right-sidenav {
+  right: 0;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: #000000b5;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  color: lightseagreen;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: darkred;
+}
+
+.left-sidenav .closebtn {
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-sidenav .closebtn {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-sidenav .closebtn {
+  left: 0px;
+}
+
+/******************************************************************************/
+/*  my-left-sidenav-top-container */
+/******************************************************************************/
+
+#my-left-sidenav-top-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 7px;
+}
+
+#my-left-sidenav-top-container > i:first-child {
+  font-size: xx-large;
+  color: #42968e;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+#my-left-sidenav-top-container > i:first-child:hover {
+  font-size: xx-large;
+  color: #42968e;
+  margin-left: 10px;
+  cursor: pointer;
+  color: darkred;
+}
+
+/******************************************************************************/
+/*  left & right form containers */
+/******************************************************************************/
+
+#form-wrapper {
+  border-radius: 5px;
+  padding: 15px;
+}
+
+#form-wrapper form > label {
+  font-family: 'PT Sans', sans-serif;
+  font-size: medium;
+  color: lightseagreen;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 3px #ddd;
+}
+
+textarea[name=description] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 3px #ddd;
+}
+
+input[type=submit] {
+  background-color: lightseagreen;
+  width: 100%;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #42968e;
+  transition: 0.3s;
+}

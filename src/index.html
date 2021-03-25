@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My-Characters-Ranking</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="https://kit.fontawesome.com/1bf65bab5c.js" crossorigin="anonymous"></script>
+    <script defer src="reader-writer.js"></script>
+  </head>
+  <body>
+    <div id="character-creation-container" class="row">
+      <button onclick="openRightNavToAdd()" class="stylish-btn">Add a new character</button>
+    </div> 
+
+    <div id="main-div" class="row"></div>
+
+    <div id="my-left-sidenav" class="left-sidenav sidenav">
+      <div id="my-left-sidenav-top-container">
+        <i class="fas fa-user-times" onclick="deleteCharacter()"></i>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidenav('my-left-sidenav')"><i class="far fa-times-circle"></i></a>
+      </div>
+      
+      <div id="form-wrapper">
+        <form action="/action_page.php">
+          <label for="name">Character Name:</label>
+          <input type="text" id="update-form-name" name="name" placeholder="Character name..">
+          <label for="score">Score:</label>
+          <input type="text" id="update-form-score" name="score" placeholder="Overall score..">
+          <label for="description">Description:</label>
+          <textarea id="update-form-description" name="description" rows="4" cols="30" maxlength="163"></textarea>
+          <label for="imageurl">ImageURL:</label>
+          <input type="text" id="update-form-imageurl" name="imageurl" placeholder="Enter the imageURL here..">
+          <input type="submit" value="Submit Updating" onclick="updateCharacterInfo(event)">
+        </form>
+      </div>
+    </div>
+
+    <div id="my-right-sidenav" class="right-sidenav sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSidenav('my-right-sidenav')"><i class="far fa-times-circle"></i></a>
+      <div id="form-wrapper">
+        <form action="/action_page.php">
+          <label for="name">Character Name:</label>
+          <input type="text" id="add-form-name" name="name" placeholder="Character name..">
+          <label for="score">Score:</label>
+          <input type="text" id="add-form-score" name="score" placeholder="Overall score..">
+          <label for="description">Description:</label>
+          <textarea id="add-form-description" name="description" rows="4" cols="30" maxlength="163"></textarea>
+          <label for="imageurl">ImageURL:</label>
+          <input type="text" id="add-form-imageurl" name="imageurl" placeholder="Enter the imageURL here..">
+          <input type="submit" value="Submit Adding" onclick="createNewCharacter(event)">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
