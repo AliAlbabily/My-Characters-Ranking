@@ -1,6 +1,9 @@
 
 const fs = require('fs') // a Node built-in module 
 
+let loc = window.location.pathname
+let dir = loc.substring(1, loc.lastIndexOf('/'))
+
 let charactersList = []
 let currentObjectIndex = 0
 
@@ -9,19 +12,19 @@ const scoreUpdateForm = document.getElementById('update-form-score')
 const descriptionUpdateForm = document.getElementById('update-form-description')
 const imageurlUpdateForm = document.getElementById('update-form-imageurl')
 
-function displayAllUsers() {
-    fs.readFile('./src/users.json', 'utf8', (err, jsonString) => {
+function displayAllCharacters() {
+    fs.readFile(`${dir}/characters.json`, 'utf8', (err, jsonString) => {
         if (err) {
             console.log("File read failed:", err)
             return
         }
         try {
-            const user = JSON.parse(jsonString)
+            const character = JSON.parse(jsonString)
             let mainContainer = document.getElementById("main-div")
-            for(i in user.users) {
-                let scoreFloat = parseFloat(user.users[i].score)
-                user.users[i].score = scoreFloat
-                charactersList.push(user.users[i])
+            for(i in character.characters) {
+                let scoreFloat = parseFloat(character.characters[i].score)
+                character.characters[i].score = scoreFloat
+                charactersList.push(character.characters[i])
             }
             for(let i = 0; i < charactersList.length; i++) {
                 const characterContainer = document.createElement('div')
@@ -41,7 +44,7 @@ function displayAllUsers() {
                         </div>
                     </div>
                     <div id="character-item-utilities">
-                        <i class="fas fa-user-edit" data-id="${i}" onclick="openNavToEdit(event)"></i>
+                        <i class="fas fa-user-edit" data-id="${i}" onclick="openLeftNavToEdit(event)"></i>
                     </div>`
                 mainContainer.appendChild(characterContainer)
             }
@@ -74,7 +77,7 @@ function fillFormWithObjectInfo(objId) {
     }
 }
 
-function openNavToEdit(e) { // the "e" object is created automatically when an event is fired
+function openLeftNavToEdit(e) { // the "e" object is created automatically when an event is fired
     var target = e.target // get the element that was the source of the event
     currentObjectIndex = target.dataset.id
     fillFormWithObjectInfo(currentObjectIndex)
@@ -92,9 +95,9 @@ function updateCharacterInfo(e) {
     }
     charactersList[currentObjectIndex] = updatedCharacter
     sortArrayHighestToLowest()
-    const obj = {users:charactersList}
+    const obj = {characters:charactersList}
     const jsonString = JSON.stringify(obj, null, 4)
-    fs.writeFile('./src/users.json', jsonString, (err) => {
+    fs.writeFile(`${dir}/characters.json`, jsonString, (err) => {
         if (err) {
             console.log('Error writing file:', err)
         } 
@@ -116,7 +119,7 @@ function updatePageContent() {
     const mainContainer = document.getElementById('main-div')
     removeElementsInsideContainer(mainContainer)
     charactersList = [] // empty list before you push new values to it in the next method
-    displayAllUsers()
+    displayAllCharacters()
 }
 
 function openRightNavToAdd() {
@@ -142,9 +145,9 @@ function createNewCharacter(e) {
     } else {
         charactersList.push(character)
         sortArrayHighestToLowest()
-        const obj = {users:charactersList}
+        const obj = {characters:charactersList}
         const jsonString = JSON.stringify(obj, null, 4)
-        fs.writeFile('./src/users.json', jsonString, err => {
+        fs.writeFile(`${dir}/characters.json`, jsonString, err => {
             if (err) {
                 console.log('Error writing file', err)
             } else {
@@ -158,9 +161,9 @@ function createNewCharacter(e) {
 
 function deleteCharacter() {
     charactersList.splice(currentObjectIndex, 1) // delete the selected object from the array
-    const obj = {users:charactersList}
+    const obj = {characters:charactersList}
     const jsonString = JSON.stringify(obj, null, 4)
-    fs.writeFile('./src/users.json', jsonString, err => {
+    fs.writeFile(`${dir}/characters.json`, jsonString, err => {
         if (err) {
             console.log('Error writing file', err)
         } else {
@@ -171,4 +174,4 @@ function deleteCharacter() {
     closeSidenav("my-left-sidenav")
 }
 
-displayAllUsers();
+displayAllCharacters();

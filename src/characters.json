@@ -1,5 +1,5 @@
 {
-    "users": [
+    "characters": [
         {
             "name": "Naofumi Iwatani",
             "description": "A 20-year old Otaku who got isekaied to another world. Things didn't go as he expected them to be. Will he be able to survive on his own ?",
@@ -16,7 +16,13 @@
             "name": "Mikasa Ackerman",
             "description": "Most beautiful woman on earth.",
             "imageUrl": "https://64.media.tumblr.com/fb08728d28190d62021f6673d2bfadf2/cecf7e6032c0eafc-b9/s540x810/3ef6a7ead588cf3f1ffbb0dcc883654258cfebcd.gifv",
-            "score": 9.2
+            "score": 9.4
+        },
+        {
+            "name": "Toudou",
+            "description": "Strongest man on earth.",
+            "imageUrl": "https://pbs.twimg.com/media/EnSdY-DW8AAyPs5.jpg",
+            "score": 9.1
         },
         {
             "name": "Raphtalia",
@@ -31,15 +37,15 @@
             "score": 8.5
         },
         {
-            "name": "Hashirama",
-            "description": "The strongest Shinobi of his time.",
-            "imageUrl": "https://i.pinimg.com/originals/25/80/24/25802445b3cc172505eb8e2132324332.gif",
-            "score": 8
-        },
-        {
             "name": "Goju Satoru",
             "description": "Most OP anime character.",
             "imageUrl": "https://i.imgur.com/URLiWgy.gif?noredirect",
+            "score": 7.9
+        },
+        {
+            "name": "Hashirama",
+            "description": "The strongest Shinobi of his time.",
+            "imageUrl": "https://i.pinimg.com/originals/25/80/24/25802445b3cc172505eb8e2132324332.gif",
             "score": 7.8
         },
         {
@@ -83,6 +89,12 @@
             "description": "A loyal servant from the past that was summoned to fight alongside Shiro Emiya in the holy grail.",
             "imageUrl": "https://steamuserimages-a.akamaihd.net/ugc/861729637608222516/B4DBB3CB1982B696D8AFAF379FA238DFB6FF21B4/",
             "score": 6.5
+        },
+        {
+            "name": "Kite",
+            "description": "...",
+            "imageUrl": "https://i.pinimg.com/originals/e2/0d/a8/e20da86a47ee03235da56896c5e10c29.gif",
+            "score": 4.5
         }
     ]
 }
