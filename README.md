@@ -7,7 +7,7 @@ This app brings you a way to create a list of your most favorite characters in a
 - Electron (for package and distribution)
 - Node.js
 - JSON
-- Vanilla JavaScript
+- JavaScript
 - HTML
 - CSS
 
@@ -19,4 +19,3 @@ ________________________________________________________________________________
 ![my-characters-ranking-image2](https://user-images.githubusercontent.com/32642133/112752166-f10c8b00-8fd1-11eb-8c9a-b816532eda6c.png)
 _____________________________________________________________________________________________________________________________________
 ![my-characters-ranking-image3](https://user-images.githubusercontent.com/32642133/112752168-f1a52180-8fd1-11eb-947d-c8fe931c989b.png)
-______________________________________________________________________________________________________________________________________
