@@ -174,4 +174,12 @@ function deleteCharacter() {
     closeSidenav("my-left-sidenav")
 }
 
-displayAllCharacters();
+/***** init *****/
+
+displayAllCharacters()
+
+addBackToTop({
+    diameter: 40,
+    backgroundColor: 'lightseagreen',
+    textColor: '#fff'
+})
