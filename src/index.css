@@ -12,11 +12,10 @@
 }
 
 body {
-  /* background: linear-gradient(to right top, #65dfc9, #6cdbeb); */
+  background-color: #65dfc9;
   background-image: url('https://jooinn.com/images/abstract-background-305.jpg');
-  background-position: center; /* Center the image */
-  background-repeat:no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: top; /* Center the image */
+  background-attachment: fixed;
 }
 
 /******************************************************************************/
