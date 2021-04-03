@@ -6,6 +6,7 @@ let dir = loc.substring(1, loc.lastIndexOf('/'))
 
 let charactersList = []
 let currentObjectIndex = 0
+let charactersListMaxSize = 50
 
 const nameUpdateForm = document.getElementById('update-form-name')
 const scoreUpdateForm = document.getElementById('update-form-score')
@@ -140,7 +141,7 @@ function createNewCharacter(e) {
         imageUrl: document.getElementById('add-form-imageurl').value,
         score: parsedScore
     }
-    if (charactersList.length >= 50) {
+    if (charactersList.length >= charactersListMaxSize) {
         console.log("Can't add more than 50 characters!")
     } else {
         charactersList.push(character)
