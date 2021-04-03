@@ -21,16 +21,16 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeSidenav('my-left-sidenav')"><i class="far fa-times-circle"></i></a>
       </div>
       <div id="form-wrapper">
-        <form action="/action_page.php">
+        <form onsubmit="updateCharacterInfo(event)">
           <label for="name">Character Name:</label>
-          <input type="text" id="update-form-name" name="name" placeholder="Character name..">
+          <input type="text" id="update-form-name" name="name" placeholder="Character name.." required>
           <label for="score">Score:</label>
-          <input type="text" id="update-form-score" name="score" placeholder="Overall score..">
+          <input type="number" id="update-form-score" name="score" min="0" max="10" step=".01" required>
           <label for="description">Description:</label>
           <textarea id="update-form-description" name="description" rows="4" cols="30" maxlength="163"></textarea>
           <label for="imageurl">ImageURL:</label>
-          <input type="text" id="update-form-imageurl" name="imageurl" placeholder="Enter the imageURL here..">
-          <input type="submit" value="Submit Updating" onclick="updateCharacterInfo(event)">
+          <input type="text" id="update-form-imageurl" name="imageurl" placeholder="Enter the imageURL here.." required>
+          <input type="submit" value="Submit Updating">
         </form>
       </div>
     </div>
@@ -38,16 +38,16 @@
     <div id="my-right-sidenav" class="right-sidenav sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeSidenav('my-right-sidenav')"><i class="far fa-times-circle"></i></a>
       <div id="form-wrapper">
-        <form action="/action_page.php">
+        <form onsubmit="createNewCharacter(event)">
           <label for="name">Character Name:</label>
-          <input type="text" id="add-form-name" name="name" placeholder="Character name..">
+          <input type="text" id="add-form-name" name="name" placeholder="Character name.." required>
           <label for="score">Score:</label>
-          <input type="text" id="add-form-score" name="score" placeholder="Overall score..">
+          <input type="number" id="add-form-score" name="score" min="0" max="10" step=".01" required>
           <label for="description">Description:</label>
           <textarea id="add-form-description" name="description" rows="4" cols="30" maxlength="163"></textarea>
           <label for="imageurl">ImageURL:</label>
-          <input type="text" id="add-form-imageurl" name="imageurl" placeholder="Enter the imageURL here..">
-          <input type="submit" value="Submit Adding" onclick="createNewCharacter(event)">
+          <input type="text" id="add-form-imageurl" name="imageurl" placeholder="Enter the imageURL here.." required>
+          <input type="submit" value="Submit Adding">
         </form>
       </div>
     </div>

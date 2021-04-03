@@ -268,18 +268,7 @@ body {
   color: lightseagreen;
 }
 
-input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  box-shadow: inset 0 1px 3px #ddd;
-}
-
-textarea[name=description] {
+input[type=text], input[type=number], textarea[name=description] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
