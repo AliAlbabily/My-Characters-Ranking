@@ -14,7 +14,7 @@
 body {
   background-color: #65dfc9;
   background-image: url('https://jooinn.com/images/abstract-background-305.jpg');
-  background-position: top; /* Center the image */
+  background-position: top;
   background-attachment: fixed;
 }
 

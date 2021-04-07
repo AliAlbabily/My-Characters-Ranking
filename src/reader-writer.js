@@ -1,5 +1,5 @@
 
-const fs = require('fs') // a Node built-in module 
+const fs = require('fs')
 
 let loc = window.location.pathname
 let dir = loc.substring(1, loc.lastIndexOf('/'))
