@@ -237,19 +237,56 @@ body {
   padding-left: 7px;
 }
 
-#my-left-sidenav-top-container > i:first-child {
+#my-left-sidenav-top-container .tooltip > i:first-child {
   font-size: xx-large;
   color: #42968e;
   margin-left: 10px;
   transition: 0.3s;
 }
 
-#my-left-sidenav-top-container > i:first-child:hover {
+#my-left-sidenav-top-container .tooltip > i:first-child:hover {
   font-size: xx-large;
   color: #42968e;
   margin-left: 10px;
   cursor: pointer;
   color: darkred;
+}
+
+/***** delete - tooltip *****/
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: 120%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 /******************************************************************************/

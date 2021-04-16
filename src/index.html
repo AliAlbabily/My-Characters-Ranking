@@ -17,7 +17,10 @@
 
     <div id="my-left-sidenav" class="left-sidenav sidenav">
       <div id="my-left-sidenav-top-container">
-        <i class="fas fa-user-times" onclick="deleteCharacter()"></i>
+        <div class="tooltip">
+          <i class="fas fa-user-times" onclick="deleteCharacter()"></i>
+          <span class="tooltiptext">Delete character</span>
+        </div>
         <a href="javascript:void(0)" class="closebtn" onclick="closeSidenav('my-left-sidenav')"><i class="far fa-times-circle"></i></a>
       </div>
       <div id="form-wrapper">
