@@ -12,8 +12,9 @@ const createWindow = () => {
     width: 800,
     height: 600,
     webPreferences: {
-      nodeIntegration: true,
-      // contextIsolation: true // this should be activated for better security in the app
+      nodeIntegration: true // "false" is default value after Electron v5
+      // enableRemoteModule: false, // turn off remote
+      // contextIsolation: true, // protect against prototype pollution
     }
   });
 
@@ -54,6 +55,4 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
-
-
 
