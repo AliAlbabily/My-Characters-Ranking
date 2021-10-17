@@ -1,7 +1,7 @@
 # My-Characters-Ranking
 
 ## About the application :
-This app brings you a way to create a list of your most favorite characters in a scale of "top favorite" to "less favorite".
+This app brings you a way to create a list of your most favorite characters in a scale of 1 (top favorite) to 50 (less favorite).
 
 ## Technologies used in this project :
 - Electron (for package and distribution)
