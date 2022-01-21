@@ -1,7 +1,10 @@
 # My-Characters-Ranking
 
 ## About the application :
-This app brings you a way to create a list of your most favorite characters in a scale of 1 (top favorite) to 50 (less favorite).
+Create a list of your most favorite characters in a scale of 10 (top favorite) to 0 (less favorite).
+
+## How to run in development mode :
+- In VSC's terminal, type in "npm start" which should run the application.
 
 ## Technologies used in this project :
 - Electron (for package and distribution)
