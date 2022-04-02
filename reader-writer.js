@@ -96,7 +96,7 @@ function updateCharacterInfo(e) {
 
     closeSidenav("my-left-sidenav")
 
-    alert("Update functionality is only implemented for the desktop at the moment.")
+    alert("Update functionality is only implemented for the desktop version at the moment.")
 }
 
 // function removeElementsInsideContainer(container) {
@@ -150,7 +150,7 @@ function createNewCharacter(e) {
         closeSidenav("my-right-sidenav")
     }
 
-    alert("Character create functionality is only implemented for the desktop at the moment.")
+    alert("Character create functionality is only implemented for the desktop version at the moment.")
 }
 
 function deleteCharacter() {
@@ -169,7 +169,7 @@ function deleteCharacter() {
 
     closeSidenav("my-left-sidenav")
     
-    alert("Delete functionality is only implemented for the desktop at the moment.")
+    alert("Delete functionality is only implemented for the desktop version at the moment.")
 }
 
 async function readFile() {
