@@ -9,14 +9,10 @@ const descriptionUpdateForm = document.getElementById('update-form-description')
 const imageurlUpdateForm = document.getElementById('update-form-imageurl')
 
 async function displayAllCharacters() {
+    let mainContainer = document.getElementById("main-div")
+    
     await readFile()
 
-    let mainContainer = document.getElementById("main-div")
-    for(i in charactersList) {
-        let scoreFloat = parseFloat(charactersList[i].score)
-        charactersList[i].score = scoreFloat
-        charactersList.push(charactersList[i])
-    }
     for(let i = 0; i < charactersList.length; i++) {
         const characterContainer = document.createElement('div')
         characterContainer.classList.add('character-container');
@@ -154,9 +150,9 @@ function createNewCharacter(e) {
 }
 
 function deleteCharacter() {
-    charactersList.splice(currentObjectIndex, 1) // delete the selected object from the array
-    const obj = {characters:charactersList}
-    const jsonString = JSON.stringify(obj, null, 4)
+    // charactersList.splice(currentObjectIndex, 1) // delete the selected object from the array
+    // const obj = {characters:charactersList}
+    // const jsonString = JSON.stringify(obj, null, 4)
     
     // fs.writeFile(`${dir}/characters.json`, jsonString, err => {
     //     if (err) {
