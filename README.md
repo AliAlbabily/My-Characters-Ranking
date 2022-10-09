@@ -3,6 +3,9 @@
 ## About the application :
 Create a list of your most favorite characters in a scale of 10 (top favorite) to 0 (less favorite).
 
+## Demo
+https://alialbabily.github.io/My-Characters-Ranking/
+
 ## How to run in development mode :
 - In VSC's terminal, type in "npm start" which should run the application.
 
